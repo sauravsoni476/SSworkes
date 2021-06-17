@@ -1,0 +1,104 @@
+## Q7
+
+import pandas as pd
+
+data1 = pd.read_csv("C:\\Users\\saurav\\Downloads\\excelR_Files_datas\\19-3-21_1st Assignment_ files and Datas\\Q7.csv")
+
+data1
+
+data1.mean()
+
+data1.median()
+
+a = data1.Points.max()
+b = data1.Points.min()
+data1_range = a-b
+data1_range
+
+
+data1.std()
+
+data1.var()
+
+
+
+## Q9
+
+data2 = pd.read_csv("C:\\Users\\saurav\\Downloads\\excelR_Files_datas\\19-3-21_1st Assignment_ files and Datas\\Q9_a.csv")
+
+data2.head(4)
+
+data2.skew()
+
+data2.kurtosis()
+
+data2.speed.hist()
+
+data2["dist"].hist()
+
+## Q9b
+
+
+data3 = pd.read_csv("C:\\Users\\saurav\\Downloads\\excelR_Files_datas\\19-3-21_1st Assignment_ files and Datas\\Q9_b.csv")
+
+data3.skew()
+
+data3.kurtosis()
+
+data3.SP.hist()
+data3.WT.hist()
+
+
+## Q12
+
+data4 = pd.DataFrame({"Scores": [34,36,36,38,38,39,39,40,40,41,41,41,41,42,42,45,96,56]})
+
+data4.count()
+
+data4.mean()
+
+data4.median()
+
+data4.var()
+
+data4.std()
+
+data4.Scores.plot()
+
+## most of the students scored  41
+
+## Q20
+Q 20) Calculate probability from the given dataset for the below cases
+
+Data _set: Cars.csv
+Calculate the probability of MPG  of Cars for the below cases.
+       MPG <- Cars$MPG
+a.	P(MPG>38)
+b.	P(MPG<40)
+c.  P (20<MPG<50)
+
+
+data5 = pd.read_csv("C:\\Users\\saurav\\Downloads\\excelR_Files_datas\\19-3-21_1st Assignment_ files and Datas\\Cars.csv")
+
+data5.head(2)
+
+data5.MPG.mean()
+
+data5.MPG.std()
+
+## A.       P(MPG>38)= 0.39
+
+
+## B.      P(MPG<40) = 0.61
+
+## C.   P (20<MPG<50) = 0.5821 - 0.4554 = 0.1267
+
+## Q 21
+
+data5.MPG.describe()
+
+#the car MPG data has not properly normal form its has little bit skewness
+data5.MPG.skew()
+
+data5
+
